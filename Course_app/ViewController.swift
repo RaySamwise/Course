@@ -13,18 +13,18 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var Outlet1: UIButton!
     var cnt = 0
-    @IBAction func buttonTapped(_ sender: Any) {
-    cnt += 1
-        Label1.text = "\(cnt)";
-        
-    }
+    
 
     @IBOutlet weak var Label1: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    @IBAction func ButtonTapped(_ sender: Any) {
+        cnt += 1
+        Label1.text = "\(cnt)";
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
