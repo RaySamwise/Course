@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3D3C817A7F8A8EF2C661591EBA6EE86A256C5D1B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3D3C817A7F8A8EF2C661591EBA6EE86A256C5D1B" : 9223372036854775807,
+    "34E3C4054E1759A0475537AE5054FE0B1BAAC347" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0EDA1CF5-BF7C-4700-B81E-542FDD9F8C93",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3D3C817A7F8A8EF2C661591EBA6EE86A256C5D1B" : "Course_app\/",
+    "34E3C4054E1759A0475537AE5054FE0B1BAAC347" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Course_app",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Course_app.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/RaySamwise\/swiftLessonOne.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "34E3C4054E1759A0475537AE5054FE0B1BAAC347"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/RaySamwise\/Course.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3D3C817A7F8A8EF2C661591EBA6EE86A256C5D1B"
+    }
+  ]
+}
