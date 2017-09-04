@@ -29,19 +29,26 @@ class Service {
                 return [Advice]()
                 
         }
-        //print(data)
-    
+        print(data)
+      
         
         
-   //     for advice in advices
-//    {
-  //      try JSONSerialization.jsonObject(with: data) as? [[String:Any]]
-  //      print(advice)
- //       }
-        return [Advice]()
+        
+      if  let rawJs =  try? JSONSerialization.jsonObject(with: data) as? [[String: Any]]
+      {
+   
+        for var partRawJs in rawJs!
+        {
+            var textNew = ""
+           if
+                let newO = partRawJs["text"] as? String
+                {
+               textNew = newO
+               print(textNew)
+            }
         
         
+        }}
+     return [Advice]()
     }
-    
-    
 }
