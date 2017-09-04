@@ -104,11 +104,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Service.swift"
-            timestampString = "526235085.251608"
+            timestampString = "526241563.098322"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "loadAdvices(fileName:ext:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -136,75 +136,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Service.swift"
-            timestampString = "526235085.251608"
+            timestampString = "526241563.098322"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "loadAdvices(fileName:ext:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Course_app.Service.loadAdvices (fileName : Swift.String, ext : Swift.String) -&gt; Swift.Array&lt;Course_app.Advice&gt;"
-                  moduleName = "Course_app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ray/Desktop/Lessons/Course_app/Service.swift"
-                  timestampString = "526235175.883814"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "3151">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Course_app.Service.loadAdvices (fileName : Swift.String, ext : Swift.String) -&gt; Swift.Array&lt;Course_app.Advice&gt;"
-                  moduleName = "Course_app"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ray/Desktop/Lessons/Course_app/Service.swift"
-                  timestampString = "526235175.886188"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "3184">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Service.swift"
-            timestampString = "526235085.251608"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "loadAdvices(fileName:ext:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Service.swift"
-            timestampString = "526235085.251608"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "loadAdvices(fileName:ext:)"
             landmarkType = "7">
          </BreakpointContent>
