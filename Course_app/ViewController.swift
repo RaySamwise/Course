@@ -23,8 +23,9 @@ class ViewController: UIViewController {
     @IBAction func ButtonTapped(_ sender: Any) {
         var NewClass = Service()
         cnt += 1
-        Label1.text = "\(cnt)";
-        
+       // Label1.text = "\(cnt)";
+       let sovet = NewClass.randomSovet()
+        Label1.text = sovet
         
     }
 

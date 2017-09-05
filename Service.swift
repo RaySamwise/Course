@@ -36,12 +36,12 @@ class Service {
         
         if  let rawJs =  try? JSONSerialization.jsonObject(with: data) as? [[String: Any]]
         {
-            
+            var newArr = [Advice]()
             for var partRawJs in rawJs!
             {
-                let id = partRawJs["id"] as? Int
+                let id = Int((partRawJs["identifier"] as? String)!)
                 let text = partRawJs["text"] as? String
-                let stat = partRawJs["stat"] as? Int
+                let stat = Int((partRawJs["stat"] as? String)!)
                 let sound = partRawJs["sound"] as? String
                 
                 if let idObj = id, let textObj = text, let statObj = stat, let soundObj = sound
@@ -50,19 +50,27 @@ class Service {
                     var newText = textObj as String
                     var newStat = statObj as Int
                     var newSound = soundObj as String
-                    
-                    print(newId,newText,newStat,newSound)
+                    newArr.append(Advice(id: newId, text: newText, state: newStat, sound: newSound))
+                    print(newArr)
+                  
                 }
-                //    var textNew = ""
-                
-                //    if let newO = partRawJs["text"] as? String
-                //    {
-                //      textNew = newO
-                //     print(textNew) }
+
                 
                 
             }
+            return newArr
         }
+        
         return [Advice]()
     }
+    func randomSovet() -> String
+    {
+        let randomIndex = Int(arc4random_uniform(UInt32(advices.count)))
+        print(advices.count)
+        let randomSovet = advices[randomIndex].text
+        return randomSovet
+        
+    }
+    
+    
 }
