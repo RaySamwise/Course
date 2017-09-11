@@ -29,8 +29,7 @@ class ViewController: UIViewController {
         
     }
 
-    @IBAction func buttonShareTapped(_ sender: Any) {
-    }
+   
    // performSegueWithIdentifier("YourSegueIdentifier", sender: nil)
     
     

@@ -12,6 +12,7 @@
 		714679C61F57C48400A61526 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 714679C41F57C48400A61526 /* Main.storyboard */; };
 		714679C81F57C48400A61526 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 714679C71F57C48400A61526 /* Assets.xcassets */; };
 		714679CB1F57C48400A61526 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 714679C91F57C48400A61526 /* LaunchScreen.storyboard */; };
+		71CB21BE1F6724E100023C94 /* AddAdviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB21BD1F6724E100023C94 /* AddAdviceViewController.swift */; };
 		71EFA6481F586825005E23E2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EFA6471F586825005E23E2 /* Model.swift */; };
 		71EFA64A1F5869BF005E23E2 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EFA6491F5869BF005E23E2 /* Service.swift */; };
 		71EFA64F1F5BE9FC005E23E2 /* advices.json in Resources */ = {isa = PBXBuildFile; fileRef = 71EFA64E1F5BE9FC005E23E2 /* advices.json */; };
@@ -25,6 +26,7 @@
 		714679C71F57C48400A61526 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		714679CA1F57C48400A61526 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		714679CC1F57C48400A61526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71CB21BD1F6724E100023C94 /* AddAdviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAdviceViewController.swift; sourceTree = "<group>"; };
 		71EFA6471F586825005E23E2 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Model.swift; path = ../Model.swift; sourceTree = "<group>"; };
 		71EFA6491F5869BF005E23E2 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Service.swift; path = ../Service.swift; sourceTree = "<group>"; };
 		71EFA64E1F5BE9FC005E23E2 /* advices.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = advices.json; path = ../../../../Downloads/advices.json; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				71EFA64C1F5BE9B1005E23E2 /* Service */,
 				71EFA64B1F5BE9AD005E23E2 /* JSON */,
 				714679C01F57C48400A61526 /* AppDelegate.swift */,
+				71CB21BD1F6724E100023C94 /* AddAdviceViewController.swift */,
 				714679C21F57C48400A61526 /* ViewController.swift */,
 				714679C41F57C48400A61526 /* Main.storyboard */,
 				714679C71F57C48400A61526 /* Assets.xcassets */,
@@ -173,6 +176,7 @@
 				71EFA6481F586825005E23E2 /* Model.swift in Sources */,
 				71EFA64A1F5869BF005E23E2 /* Service.swift in Sources */,
 				714679C31F57C48400A61526 /* ViewController.swift in Sources */,
+				71CB21BE1F6724E100023C94 /* AddAdviceViewController.swift in Sources */,
 				714679C11F57C48400A61526 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
