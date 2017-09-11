@@ -7,7 +7,7 @@
 //
 
 import Foundation
-struct Advice {
+struct AdviceStruct {
     let id: Int
     let text: String
     let state: Int

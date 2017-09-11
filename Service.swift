@@ -9,24 +9,24 @@
 import Foundation
 class Service {
     
-    var advices: [Advice]! = [Advice]()
+    var advices: [AdviceStruct]! = [AdviceStruct]()
     
     init() {
         advices = loadAdvices(fileName: "advices", ext: "json")
         
     }
-    func loadAdvices(fileName : String, ext : String) -> [Advice]
+    func loadAdvices(fileName : String, ext : String) -> [AdviceStruct]
     {
         let path =  Bundle.main.path(forResource: fileName, ofType: ext)
         guard let resourcePath = path else  {
             
-            return [Advice]()
+            return [AdviceStruct]()
             
         }
         let url = URL(fileURLWithPath:resourcePath)
         guard let data = try? Data(contentsOf: url)
             else {
-                return [Advice]()
+                return [AdviceStruct]()
                 
         }
         print(data)
@@ -36,7 +36,7 @@ class Service {
         
         if  let rawJs =  try? JSONSerialization.jsonObject(with: data) as? [[String: Any]]
         {
-            var newArr = [Advice]()
+            var newArr = [AdviceStruct]()
             for var partRawJs in rawJs!
             {
                 let id = Int((partRawJs["identifier"] as? String)!)
@@ -50,7 +50,7 @@ class Service {
                     var newText = textObj as String
                     var newStat = statObj as Int
                     var newSound = soundObj as String
-                    newArr.append(Advice(id: newId, text: newText, state: newStat, sound: newSound))
+                    newArr.append(AdviceStruct(id: newId, text: newText, state: newStat, sound: newSound))
                     print(newArr)
                   
                 }
@@ -61,14 +61,14 @@ class Service {
             return newArr
         }
         
-        return [Advice]()
+        return [AdviceStruct]()
     }
     func randomSovet() -> String
     {
         let randomIndex = Int(arc4random_uniform(UInt32(advices.count)))
         print(advices.count)
-        let randomSovet = advices[randomIndex].text
-        return randomSovet
+         return advices[randomIndex].text
+       
         
     }
     

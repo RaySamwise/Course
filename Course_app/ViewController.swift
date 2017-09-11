@@ -12,23 +12,26 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var Outlet1: UIButton!
-    var cnt = 0
+    //var cnt = 0
     
 
-    @IBOutlet weak var Label1: UILabel!
+    @IBOutlet weak var adviceLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
     @IBAction func ButtonTapped(_ sender: Any) {
-        var NewClass = Service()
-        cnt += 1
+        let NewAdviceService = Service()
+       // cnt += 1
        // Label1.text = "\(cnt)";
-       let sovet = NewClass.randomSovet()
-        Label1.text = sovet
+       let sovet = NewAdviceService.randomSovet()
+        adviceLabel.text = sovet
         
     }
 
+    @IBAction func buttonShareTapped(_ sender: Any) {
+    }
+   // performSegueWithIdentifier("YourSegueIdentifier", sender: nil)
     
     
     override func didReceiveMemoryWarning() {
