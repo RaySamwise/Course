@@ -33,7 +33,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Save Advices"/>
                                 <connections>
-                                    <segue destination="wYS-dR-giG" kind="modal" id="HbI-xQ-4Ov"/>
+                                    <segue destination="wYS-dR-giG" kind="show" identifier="goNextPage" id="HbI-xQ-4Ov"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyU-Si-CQb">
@@ -79,6 +79,9 @@
                                 <rect key="frame" x="66" y="318" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="buttonAddTapped:" destination="wYS-dR-giG" eventType="touchUpInside" id="rDD-ON-J6W"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMN-Zr-kdS">
                                 <rect key="frame" x="260" y="317" width="68" height="30"/>
@@ -91,6 +94,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="savedAdvices" destination="nOX-T2-CFN" id="1SS-p4-Wbp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZJl-Iw-2RT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

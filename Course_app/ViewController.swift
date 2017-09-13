@@ -30,8 +30,17 @@ class ViewController: UIViewController {
     }
 
    
-   // performSegueWithIdentifier("YourSegueIdentifier", sender: nil)
-    
+   
+    func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        if segue.identifier == "goNextPage"
+        {
+            var destinationVC = segue.destination as? AddAdviceViewController
+            
+            destinationVC?.dataFromPreviousViewController = adviceLabel.text!
+            
+        }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

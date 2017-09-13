@@ -9,20 +9,51 @@
 import UIKit
 class AddAdviceViewController : ViewController
 {
-    override func viewDidLoad() {
+    
+    var dataFromPreviousViewController = "123"
+    
+    override func viewDidLoad()
+        
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-       /* navigationItem.leftBarButtonItem = UIBarButtonItem(title: "< Back", style: .plain, target: self, action: #selector(backAction))*/
+        
+        // Do any additional setup after loading the view.
+  
+        
+    }
+        
+      
+    
+    
+    func backAction(){
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func cancelButtonTapped(_ sender: Any) {
-        
+    
         backAction()
     }
     
-    func backAction(){
-        //print("Back Button Clicked")
-        dismiss(animated: true, completion: nil)
+    
+    @IBOutlet weak var savedAdvices: UILabel!
+    @IBAction func buttonAddTapped(_ sender: Any) {
+       
+        
+        
+        
+        savedAdvices.text = dataFromPreviousViewController
+       
+            
+        //    = NewAdviceService.randomSovet()
+     //   adviceLabel.text = sovet
+        
+    
+    
     }
+    
+    
+    
+    
+  
     
 }
