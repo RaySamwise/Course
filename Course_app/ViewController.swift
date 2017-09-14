@@ -31,7 +31,7 @@ class ViewController: UIViewController {
 
    
    
-    func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         if segue.identifier == "goNextPage"
         {

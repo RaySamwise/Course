@@ -11,11 +11,13 @@ class AddAdviceViewController : ViewController
 {
     
     var dataFromPreviousViewController = "123"
-    
+    var favorites : String = ""
+
     override func viewDidLoad()
         
     {
         super.viewDidLoad()
+       
         
         // Do any additional setup after loading the view.
   
@@ -34,14 +36,16 @@ class AddAdviceViewController : ViewController
         backAction()
     }
     
+    @IBOutlet weak var favoriteAdvices: UILabel!
     
     @IBOutlet weak var savedAdvices: UILabel!
     @IBAction func buttonAddTapped(_ sender: Any) {
        
         
         
-        
-        savedAdvices.text = dataFromPreviousViewController
+                savedAdvices.text = dataFromPreviousViewController
+        favorites.append(dataFromPreviousViewController)
+        favoriteAdvices.text! = favorites
        
             
         //    = NewAdviceService.randomSovet()
