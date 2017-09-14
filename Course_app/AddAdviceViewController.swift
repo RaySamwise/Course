@@ -11,7 +11,7 @@ class AddAdviceViewController : ViewController
 {
     
     var dataFromPreviousViewController = "123"
-    var favorites : String = ""
+  //  var favorites : String = ""
 
     override func viewDidLoad()
         
@@ -44,13 +44,21 @@ class AddAdviceViewController : ViewController
         
         
                 savedAdvices.text = dataFromPreviousViewController
-        favorites.append(dataFromPreviousViewController)
-        favoriteAdvices.text! = favorites
+        let file = "file.txt"
+        let text = "555555"
+        if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+            
+            let path = dir.appendingPathComponent(file)
+            do  {
+                try text.write(to: path, atomically: false, encoding: String.Encoding.utf8)
+            }
+        }
+        
+        /*favorites.append(dataFromPreviousViewController)
+        favoriteAdvices.text! = favorites*/
        
             
-        //    = NewAdviceService.randomSovet()
-     //   adviceLabel.text = sovet
-        
+      
     
     
     }
